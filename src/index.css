@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.site_menu li{
+    border-right: 1px solid gray;
+}
+.site_menu li:last-child{
+    border-right: 0px solid transparent;
+}

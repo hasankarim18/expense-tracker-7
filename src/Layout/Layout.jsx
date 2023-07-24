@@ -5,13 +5,15 @@ import Header from "../Components/Header/Header";
 
 const Layout = () => {
     return (
+      <div className="bg-gray-50">
         <div className="container mx-auto">
-            <Header />
-                <div>
-                    <Outlet />
-                </div>
-            <Footer />
+          <Header />
+          <div className="py-4 bg-white">
+            <Outlet />
+          </div>
+          <Footer />
         </div>
+      </div>
     );
 };
 
