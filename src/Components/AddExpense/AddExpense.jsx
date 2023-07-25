@@ -8,7 +8,7 @@ const AddExpense = () => {
         e.preventDefault()
         const form = e.target 
         const expenseName = form.expenseName.value 
-        const expenseAmount = form.amount.value
+        const expenseAmount = parseInt(form.amount.value)
 
         const newContex = [...expenseArr, {expenseName, expenseAmount}]
 

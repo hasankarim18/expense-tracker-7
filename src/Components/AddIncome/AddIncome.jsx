@@ -8,7 +8,7 @@ const AddIncome = () => {
     e.preventDefault();
     const form = e.target;
     const incomeName = form.incomeName.value;
-    const incomeAmount = form.amount.value;
+    const incomeAmount = parseInt(form.amount.value)
 
     const newExpense = [...incomeArr, { incomeName, incomeAmount }];
 
@@ -21,7 +21,7 @@ const AddIncome = () => {
   return (
     <div>
       <h2 className="text-2xl">Add Expense</h2>
-      <div className="p-8 bg-rose-50">
+      <div className="p-8 bg-green-100">
         <form onSubmit={handleSubmit}>
           <div>
             <label>Income Name:</label>
