@@ -16,7 +16,7 @@ const AddIncome = () => {
     form.reset()
   };
 
-  console.log(incomeArr);
+  // console.log(incomeArr);
 
   return (
     <div>
